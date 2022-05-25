@@ -1,0 +1,303 @@
+/* RESETS
+------------------------------------------------- 
+*, *:before, *:after{margin: 0; padding: 0; box-sizing: border-box; -webkit-box-sizing: border-box;}
+input, select, iframe, button{border: none; font-family: 'Roboto', sans-serif;}
+h1, h2, h3{margin: 0; padding: 0;}
+ol, ul{list-style: none;
+a{text-decoration: none; color: inherit;}
+a:hover{color: #f9014d;} */
+
+/* GLOBAIS
+----------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* ESTRUTURA DO PORTFOLIO
+----------------------------------------------------- */
+
+body{
+    font-size: 100%;
+    background-color: #25363E;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.cabecalho-logo {
+    height: 80px;
+}
+
+.cabecalho-nav {
+    display: flex;
+    gap: 32px;
+}
+
+.cabecalho-nav-item {
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    font-size: 22px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-transform: uppercase;
+} 
+
+
+/* SEÇÃO HELLO STRANGE
+
+---------------------------------------------------------- */
+
+.conteudo {
+    margin-bottom: 48px;
+    border-top: 0.4px solid #FFD954;    
+}
+
+.conteudo-principal {
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 120px;
+}
+
+.h1-inicial {
+    font-family: 'Rosarivo', serif;
+    font-size: 58px;
+    color: #FFD954;
+}
+
+.texto-inicial {
+    font-family: 'Roboto', sans-serif;
+    font-size:24px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    line-height: 48px;
+}
+
+.button-inicial {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+
+}
+
+.btn {
+    background-color: #FFD954;
+    border: none;
+    padding: 15px 32px;
+    border-radius: 10px;
+    font-family: 'Rokkitt', serif;
+    font-size: 24px;
+    color: #25363E;
+    font-weight: 600;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.35);
+}
+
+.link-btn {
+    color: #25363E;
+}
+/* SEÇÃO SOBRE
+
+---------------------------------------------------------- */
+
+.conteudo-sobre {
+    margin-bottom: 78px;
+    border-top: 0.4px solid #FFD954;  
+}
+
+.titulo {
+    font-family: 'Rosarivo', serif;
+    font-size: 48px;
+    text-align: center;
+    color: #FFD954;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+
+.organiza-sobre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 100px;
+}
+.sobre-isso {
+    display: flex;  
+}
+
+.token-rpg {
+    width: 256px;
+}
+
+.bloco-texto {
+    background-color: #182d37;
+    width: 780px;
+    height: 300px;
+    padding: 35px;
+}
+
+.texto-sobre {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+    line-height: 28px;
+    text-indent: 30px;
+}
+
+/* SEÇÃO RPGS
+
+---------------------------------------------------------- */
+
+.conteudo-rpgs {
+    margin-bottom: 48px;
+    border-top: 0.4px solid #FFD954;  
+}
+
+.bloco-rpgs {
+    display: flex;
+    justify-content: center;
+}
+
+#slider {
+    width: 80%;
+    max-width: 400px;
+    height: 235vw;
+    max-height: 250px;
+    position: relative;
+}
+
+#slider img{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 800ms;
+}
+
+#slider img.selected { 
+    opacity: 1;
+}
+
+/* SEÇÃO COLETÂNEAS
+
+---------------------------------------------------------- */
+
+.conteudo-coletaneas {
+    margin-bottom: 48px;
+    border-top: 0.4px solid #FFD954;  
+}
+
+
+/* SEÇÃO PROJETOS
+
+---------------------------------------------------------- */
+
+.conteudo-projetos {
+    margin-bottom: 48px;
+    border-top: 0.4px solid #FFD954;
+    border-bottom: 0.4px solid #FFD954; 
+}
+
+.estrutura-projetos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 68px;
+}
+
+.capa-projeto {
+    width: 300px;
+    height: 220px;
+}
+
+.projetinho {
+    background-color: #182d37;
+    width: 340px;
+    padding: 20px;
+}
+
+.titulo-projetinho {
+    font-family: 'Rokkitt', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #FFD954;
+    margin: 20px 0px 0px 0px;
+    text-align: center;
+
+}
+
+.texto-projeto {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #FFFFFF;
+    width: 300px;
+    margin-top: 10px;
+    text-indent: 25px;
+}
+
+/* RODAPÉ
+
+---------------------------------------------------------- */
+
+.rodape {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 400px;
+    margin-bottom: 70px;
+}
+
+.estrutura-nomenclatura {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 150px;
+}
+
+.rodape-logo {
+    height: 80px;
+}
+
+.nome-rodape{
+    font-family: 'Rosarivo', serif;
+    font-size: 36px;
+    color: #FFD954;
+    margin-left: -100px;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+       
+}
+
+.titulo-redes {
+    font-family: 'Rokkitt', serif;
+    font-size: 20px;
+    color:#FFD954
+}
+
+.icon-social {
+    height: 25px;
+}
+
+
+
+
